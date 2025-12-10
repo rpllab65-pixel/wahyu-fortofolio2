@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Home — Blog Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background: #0a0f24;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: #111a;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        
+        h1 {
+            color: #00eaff;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .box {
+            background: #0e142b;
+            padding: 15px;
+            border-left: 5px solid #00eaff;
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table th,
+        table td {
+            border: 1px solid #00eaff55;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .btn {
+            display: block;
+            text-align: center;
+            background: #00eaff;
+            color: #000;
+            padding: 12px;
+            width: 200px;
+            margin: 25px auto;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏠 Smart Home System</h1>
+        <p>
+            Smart Home adalah sistem rumah pintar yang memungkinkan pengguna untuk mengontrol lampu, pintu otomatis, alarm keamanan, serta perangkat elektronik lainnya menggunakan sensor dan mikrokontroler seperti Arduino atau ESP32.
+        </p>
+
+        <img src="foto4.jpeg" alt="Smart Home Project" />
+
+        <h2>🧰 Komponen yang Digunakan</h2>
+
+        <table>
+            <tr>
+                <th>Komponen</th>
+                <th>Jumlah</th>
+            </tr>
+            <tr>
+                <td>Arduino Uno / ESP32</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Relay Module</td>
+                <td>1–4</td>
+            </tr>
+            <tr>
+                <td>LED / Lampu</td>
+                <td>2–4</td>
+            </tr>
+            <tr>
+                <td>Sensor PIR (Motion)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Sensor Ultrasonik (Pintu Otomatis)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Servo Motor</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Kabel Jumper</td>
+                <td>Beberapa</td>
+            </tr>
+        </table>
+
+        <h2>⚙️ Cara Kerja Sistem</h2>
+        <div class="box">
+            <p>
+                💡 Lampu menyala otomatis saat ada gerakan yang terdeteksi oleh sensor PIR.
+            </p>
+            <p>
+                🚪 Pintu otomatis terbuka menggunakan servo saat sensor ultrasonik mendeteksi jarak dekat.
+            </p>
+            <p>🔔 Alarm aktif jika sistem mendeteksi aktivitas mencurigakan.</p>
+            <p>
+                📱 Sistem ini dapat dikembangkan dengan kontrol IoT melalui Wi-Fi atau aplikasi Android.
+            </p>
+        </div>
+
+        <h2>🚀 Hasil Akhir</h2>
+        <p>
+            Proyek Smart Home berhasil dibuat dan dapat bekerja secara otomatis untuk meningkatkan keamanan dan kenyamanan rumah. Proyek ini cocok untuk siswa tingkat menengah maupun lanjutan yang tertarik dengan IoT (Internet of Things) dan automasi.
+        </p>
+
+        <a href="index.html" class="btn">← Kembali ke Website</a>
+    </div>
+
+    <footer>© 2025 — Dibuat oleh Wahyu Eka A.P</footer>
+</body>
+
+</html>

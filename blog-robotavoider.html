@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: Robot Avoider (Penghindar Halangan)</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #002b55, #0e0436, #17001f);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1,
+        h2 {
+            color: #7bf0ff;
+        }
+        
+        .list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .list th,
+        .list td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px;
+        }
+        
+        .list th {
+            background: rgba(0, 188, 255, 0.3);
+        }
+        
+        a.back {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #00b4ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            background: rgba(255, 255, 0, 0.15);
+            padding: 12px;
+            border-left: 5px solid #ffeb00;
+            border-radius: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back">⬅ Kembali ke Beranda</a>
+
+        <h1>Proyek: Robot Avoider (Robot Penghindar Halangan)</h1>
+
+        <p>
+            Robot Avoider adalah salah satu jenis robot otonom yang mampu bergerak sendiri dan menghindari rintangan di depannya. Robot ini menggunakan sensor ultrasonik sebagai indera pendeteksi objek dan motor driver untuk mengatur arah pergerakan motor DC. Proyek
+            ini cocok untuk pemula yang ingin mempelajari dasar robotika, logika navigasi, dan sensor otomatis.
+        </p>
+        <img src="foto2.jpeg" alt="robotavoider Project" />
+
+        <h2>Komponen yang Dibutuhkan</h2>
+
+        <div class="list">
+            <table>
+                <tr>
+                    <th>Komponen</th>
+                    <th>Jumlah</th>
+                </tr>
+                <tr>
+                    <td>Arduino Uno / ESP32</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Sensor Ultrasonik HC-SR04</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Motor Driver L298N</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Motor DC + Roda</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Baterai 9–12V</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Chassis Robot</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Cara Kerja Sistem</h2>
+
+        <ul>
+            <li>Robot bergerak maju selama tidak ada halangan di depan sensor.</li>
+            <li>
+                Saat sensor ultrasonik mendeteksi objek di jarak tertentu, robot berhenti.
+            </li>
+            <li>
+                Robot kemudian mengambil keputusan untuk belok kanan atau kiri berdasarkan logika yang diprogram.
+            </li>
+            <li>
+                Logika bisa dikembangkan menjadi navigasi berbasis AI, mapping, atau kontrol jarak jauh.
+            </li>
+        </ul>
+
+        <div class="highlight">
+            💡
+            <strong>Semakin kompleks algoritma yang digunakan, semakin cerdas perilaku
+          robot.</strong
+        >
+      </div>
+
+      <h2>Hasil & Pembelajaran</h2>
+
+      <p>
+        Robot berhasil bergerak secara otomatis dan mampu menghindari objek di
+        depannya tanpa bantuan kendali manusia. Proyek ini memberikan pemahaman
+        penting mengenai:
+      </p>
+
+      <ul>
+        <li>Pemrograman motor dan pengendalian arah gerak</li>
+        <li>Logika pengambilan keputusan otomatis</li>
+        <li>Pemanfaatan sensor ultrasonik sebagai sistem indera robot</li>
+        <li>Dasar elektronika, motor driver, dan integrasi hardware</li>
+      </ul>
+
+      <h2>Kesimpulan</h2>
+
+      <p>
+        Robot Avoider adalah salah satu proyek robotika yang bagus untuk
+        mengembangkan kemampuan logika, elektronika, dan automasi. Dengan
+        memanfaatkan sensor ultrasonik dan motor driver, kita dapat membuat
+        robot yang dapat bergerak cerdas tanpa dikendalikan langsung oleh
+        manusia. Proyek ini adalah langkah awal sebelum membangun robot lebih
+        canggih seperti robot line follower, obstacle mapping, atau robot
+        autonomous berbasis AI.
+      </p>
+
+      <div class="footer">© 2025 — Dibuat oleh Wahyu Eka A.P</div>
+    </div>
+  </body>
+</html>

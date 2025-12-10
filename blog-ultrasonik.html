@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: Sensor Ultrasonik + LCD I2C + LED RGB</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #120042, #3f0f7e, #14002b);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1,
+        h2,
+        h3 {
+            color: #91e5ff;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            text-align: left;
+        }
+        
+        .list th,
+        .list td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px;
+        }
+        
+        .list th {
+            background: rgba(0, 195, 255, 0.3);
+        }
+        
+        .highlight {
+            background: rgba(0, 255, 136, 0.2);
+            padding: 10px;
+            border-left: 5px solid #00ff95;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        a.back {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #00b4ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .watch-box {
+            margin-top: 25px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid #ffea00;
+        }
+        
+        .watch-box strong {
+            color: #ffea00;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back">⬅ Kembali ke Beranda</a>
+
+        <h1>Proyek: Sensor Ultrasonik HC-SR04 dengan LCD I2C & LED RGB</h1>
+
+        <p>
+            Pada proyek ini, saya membuat sistem pendeteksi jarak menggunakan sensor ultrasonik HC-SR04. Hasil pengukuran ditampilkan pada layar LCD I2C, dan LED RGB berfungsi sebagai indikator visual berdasarkan jarak yang terdeteksi.
+        </p>
+        <img src="foto3.jpeg" alt="Smart Home Project" />
+
+        <h2>Komponen yang Digunakan</h2>
+
+        <div class="list">
+            <table>
+                <tr>
+                    <th>Komponen</th>
+                    <th>Jumlah</th>
+                </tr>
+                <tr>
+                    <td>Arduino Uno</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Sensor Ultrasonik HC-SR04</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>LCD I2C 16x2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>LED RGB (Common Cathode)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Kabel Jumper</td>
+                    <td>Secukupnya</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Cara Kerja Sistem</h2>
+        <p>Sistem bekerja dengan langkah berikut:</p>
+
+        <ul>
+            <li>
+                Sensor ultrasonik mengirimkan gelombang ultrasonic untuk mendeteksi jarak objek.
+            </li>
+            <li>Hasil pengukuran ditampilkan pada layar LCD I2C.</li>
+            <li>LED RGB berubah warna sesuai kondisi jarak objek:</li>
+        </ul>
+
+        <div class="highlight">
+            🔹 <strong>Hijau</strong> → Objek jauh<br /> 🔹 <strong>Kuning</strong> → Objek berada pada jarak sedang<br /> 🔹 <strong>Merah</strong> → Objek sangat dekat atau mendekati batas
+        </div>
+
+        <h2>Video Tutorial</h2>
+        <div class="watch-box">
+            🎥
+            <strong>Tonton tutorial lengkapnya untuk memahami cara merakit dan memprogram
+          proyek ini!</strong
+        ><br /><br />
+        Klik play pada video di bawah ini untuk mulai belajar 👇
+      </div>
+
+      <iframe src="https://youtu.be/j55qu95KP2E?si=iGor_ERu34cCvOoq" allowfullscreen></iframe>
+
+
+      <h2>Manfaat & Implementasi</h2>
+      <p>
+        Proyek ini dapat diterapkan dalam berbagai sistem otomatisasi, seperti:
+      </p>
+
+      <ul>
+        <li>Sensor parkir kendaraan</li>
+        <li>Sistem keamanan sederhana</li>
+        <li>Pengukur jarak pada robot pemetaan</li>
+        <li>Proyek edukasi Arduino dan IoT</li>
+      </ul>
+
+      <h2>Kesimpulan</h2>
+      <p>
+        Dengan memanfaatkan kombinasi sensor ultrasonik, LCD I2C, dan LED RGB,
+        sistem ini memberikan pengukuran jarak secara real-time yang mudah
+        dibaca baik secara visual maupun digital. Proyek ini menjadi langkah
+        awal yang bagus untuk mempelajari sensor, output tampilan, logika
+        pemrograman, dan pengembangan sistem IoT lebih lanjut.
+      </p>
+
+      <div class="footer">© 2025 — Dibuat oleh Wahyu Eka A.P</div>
+    </div>
+  </body>
+</html>

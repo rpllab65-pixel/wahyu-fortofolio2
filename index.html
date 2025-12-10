@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="" />
+    <title>Wahyu Eka A.P — Portfolio</title>
+
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- CANVAS EFFECT -->
+    <canvas id="rainCanvas"></canvas>
+    <canvas id="starCanvas"></canvas>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h2 class="logo"><i class="fa-solid fa-house"></i> Wahyu Eka A.P</h2>
+        <nav id="menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#proyek">Project</a>
+            <a href="#blog">Blog</a>
+            <a href="#game">Game</a>
+
+            <!-- ⭐ DITAMBAHKAN -->
+            <a href="#skills">Skills</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <section id="beranda" class="hero">
+        <div class="hero-text">
+            <h1>Halo 👋, saya <span>Wahyu Eka Adi Pratama</span></h1>
+            <p>Front-end Developer & UI/UX Enthusiast</p>
+            <a href="#game" class="btn">Main Game 🎮</a>
+        </div>
+        <div class="hero-img">
+            <img src="foto1.jpeg" alt="Foto Profil" />
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section">
+        <h2 class="title">Tentang Saya</h2>
+        <p class="desc">
+            Saya adalah seorang siswa di SMKN Pasirian dengan jurusan Rekayasa Perangkat Lunak (RPL). Saya sedang mempelajari dunia teknologi seperti pemrograman, pengembangan aplikasi, dan pembuatan sistem berbasis software.
+        </p>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="section">
+        <h2 class="title">Pengalaman Belajar</h2>
+
+        <div class="experience-box">
+            <h3>📘 Pemrograman</h3>
+            <p>Saya mempelajari HTML, CSS, JavaScript, dan Python.</p>
+        </div>
+
+        <div class="experience-box">
+            <h3>🔧 IoT & Arduino</h3>
+            <p>
+                Membuat Smart Home, Robot Avoider, sistem sensor ultrasonik, LCD I2C, dan LED RGB.
+            </p>
+        </div>
+
+        <div class="experience-box">
+            <h3>💻 Web Development</h3>
+            <p>
+                Mendesain dan membangun website sederhana menggunakan HTML, CSS, dan JavaScript.
+            </p>
+        </div>
+
+        <div class="experience-box">
+            <h3>🧠 Software Project</h3>
+            <p>Membuat program dasar menggunakan Java dan Python.</p>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="proyek" class="section">
+        <h2 class="title">Project</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="foto3.jpeg" class="project-img" />
+                <h3>Sensor Ultrasonik</h3>
+                <p>Mengukur jarak menggunakan HC-SR04 & LCD I2C.</p>
+            </div>
+
+            <div class="card">
+                <img src="foto2.jpeg" class="project-img" />
+                <h3>Robot Avoider</h3>
+                <p>Robot berjalan otomatis dan menghindari rintangan.</p>
+            </div>
+
+            <div class="card">
+                <img src="foto4.jpeg" class="project-img" />
+                <h3>Smart Home</h3>
+                <p>Kontrol lampu, alarm dan pintu otomatis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📘 BLOG SECTION (DITAMBAHKAN) -->
+    <section id="blog" style="text-align: center; padding: 60px 20px">
+        <h2 style="color: #00eaff; font-size: 32px; margin-bottom: 30px">
+            📘 Blog Proyek
+        </h2>
+
+        <div style="max-width: 750px; margin: auto; text-align: left">
+            <!-- Artikel 1 -->
+            <a href="blog-ultrasonik.html" style="
+            display: block;
+            padding: 20px;
+            background: #111a;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: rgb(31, 25, 25);
+            transition: 0.3s;
+          ">
+                <h3>📌 Sensor Ultrasonik + LCD I2C + LED RGB</h3>
+                <p>
+                    Proyek pendeteksi jarak dengan tampilan LCD dan indikator LED RGB.
+                </p>
+            </a>
+
+            <!-- Artikel 2 -->
+            <a href="blog-robotavoider.html" style="
+            display: block;
+            padding: 20px;
+            background: #111a;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+          ">
+                <h3>🤖 Robot Avoider</h3>
+                <p>
+                    Robot penghindar halangan menggunakan sensor ultrasonik & motor driver L298N.
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Artikel 3 -->
+    <a href="blog-smarthome.html" style="
+            display: block;
+            padding: 20px;
+            background: #111a;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+          ">
+        <h3>🤖 smarthome</h3>
+        <p>
+            **SmartHome adalah rumah yang memakai perangkat pintar yang bisa dikontrol otomatis atau lewat HP agar lebih aman dan nyaman.**
+
+        </p>
+    </a>
+    </div>
+    </section>
+    <!-- ======== SECTION TETAP SAMA (TENTANG - LOKASI - KONTAK) ======== -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- TENTANG -->
+<section id="tentang" class="section">
+    <h2 class="title">Tentang Saya</h2>
+    <p class="desc">
+        Saya adalah seorang siswa di SMKN Pasirian dengan jurusan Rekayasa Perangkat Lunak (RPL). Saya sedang mempelajari dunia teknologi seperti pemrograman, pengembangan aplikasi, dan pembuatan sistem berbasis software. Saya terus berusaha mengembangkan skill
+        melalui latihan, proyek, dan pembelajaran mandiri.
+    </p>
+</section>
+
+<!-- PENGALAMAN -->
+<section id="pengalaman" class="section">
+    <h2 class="title">Pengalaman Belajar</h2>
+
+    <div class="experience-box">
+        <h3>📘 Pemrograman</h3>
+        <p>Saya mempelajari HTML, CSS, JavaScript, dan Python.</p>
+    </div>
+
+    <div class="experience-box">
+        <h3>🔧 IoT & Arduino</h3>
+        <p>Membuat Smart Home, Robot Avoider, sistem sensor ultrasonik, LCD I2C, dan LED RGB.</p>
+    </div>
+
+    <div class="experience-box">
+        <h3>💻 Web Development</h3>
+        <p>Mendesain dan membangun website sederhana menggunakan HTML, CSS, dan JavaScript.</p>
+    </div>
+
+    <div class="experience-box">
+        <h3>🧠 Software Project</h3>
+        <p>Membuat program dasar menggunakan Java dan Python untuk memahami konsep logika pemrograman dan debugging.</p>
+    </div>
+
+    <div class="experience-box">
+        <h3>🤝 Kolaborasi & Tim</h3>
+        <p>Berkolaborasi dalam pembuatan mini project sekolah, belajar teamwork, komunikasi, dan workflow yang lebih profesional.</p>
+    </div>
+</section>
+
+
+<!-- PROJECT -->
+<section id="proyek" class="section">
+    <h2 class="title">Project</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="foto3.jpeg" class="project-img" />
+            <h3>Sensor Ultrasonik</h3>
+            <p>
+                Mengukur jarak menggunakan HC-SR04 & LCD I2C. <br /><b>Manfaat:</b> belajar logika sensor.<br /><b>Kelebihan:</b> akurat & praktis.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="foto2.jpeg" class="project-img" />
+            <h3>Robot Avoider</h3>
+            <p>
+                Robot berjalan otomatis dan menghindari rintangan. <br /><b>Manfaat:</b
+            >
+            belajar kontrol motor & algoritma.<br /><b>Kelebihan:</b> responsif & stabil.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="foto4.jpeg" class="project-img" />
+            <h3>Smart Home</h3>
+            <p>
+                Kontrol lampu, alarm dan pintu otomatis. <br /><b>Manfaat:</b> keamanan rumah.<br /><b>Kelebihan:</b> hemat energi & otomatis.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 🎮 GAME SECTION -->
+<section id="game" class="section">
+    <h2 class="title">🎮 Game Pembelajaran</h2>
+    <p class="desc">Belajar sambil bermain 🚀</p>
+
+    <!-- Game MTK -->
+    <div class="card game-box">
+        <h3>🧠 Game Matematika</h3>
+        <p id="question"></p>
+        <input type="number" id="answer" class="inputGame" placeholder="Jawaban..." />
+        <button onclick="checkAnswer()" class="btn">Submit</button>
+
+        <p>🏆 Skor: <span id="score">0</span></p>
+    </div>
+
+    <!-- Game English -->
+    <div class="card game-box">
+        <h3>📘 Tebak Kata Bahasa Inggris</h3>
+        <p id="word"></p>
+        <input type="text" id="engAnswer" class="inputGame" placeholder="Artinya..." />
+        <button onclick="checkEnglish()" class="btn">Submit</button>
+        <p>🏆 Skor: <span id="engScore">0</span></p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+        <div class="progress"><span style="width: 95%">HTML</span></div>
+        <div class="progress"><span style="width: 90%">CSS</span></div>
+        <div class="progress"><span style="width: 75%">JavaScript</span></div>
+        <div class="progress"><span style="width: 65%">Python</span></div>
+        <div class="progress"><span style="width: 80%">UI/UX</span></div>
+    </div>
+</section>
+
+<section id="lokasi" class="section">
+    <h2 class="title">📍 Lokasi rumah Saya</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1764661875281!5m2!1sid!2sid!6m8!1m7!1swOpORBSYFharG5dCGwZf6w!2m2!1d-8.194041830971834!2d112.9408015419992!3f74.68596206811497!4f-12.008852993818493!5f0.7820865974627469" width="90%" height="300"
+        style="border:0; border-radius: 12px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+<!-- KONTAK -->
+<section id="kontak" class="section">
+    <h2 class="title">Kontak</h2>
+    <p class="desc">Hubungi saya melalui sosial media 👇</p>
+
+    <div class="sosmed-list">
+        <a href="https://wa.me/088102787593" class="sosmed-item wa">📱 WhatsApp</a
+        >
+        <a href="mailto:wahyu@gmail.com" class="sosmed-item email">📧 Email</a>
+        <a href="https://www.instagram.com/wahyuekaadipratama" class="sosmed-item ig">📷 Instagram</a
+        >
+        <a
+          href="https://www.youtube.com/@wahyupratama-g5s"
+          class="sosmed-item yt"
+          >▶ YouTube</a
+        >
+      </div>
+    </section>
+
+ <!-- === DATASET PENGUNJUNG === -->
+<section id="dataset" class="section">
+    <h2 class="title">📋 Data Pengunjung</h2>
+
+    <!-- Form Input -->
+    <div class="card" style="max-width: 500px; margin:auto; padding:20px;">
+        <h3>Isi Data Pengunjung</h3>
+
+        <input type="text" id="nama" placeholder="Nama..." class="inputGame" required />
+        <input type="text" id="alamat" placeholder="Tempat Tinggal..." class="inputGame" required />
+        <input type="number" id="umur" placeholder="Umur..." class="inputGame" required />
+        <input type="email" id="email" placeholder="Email..." class="inputGame" required />
+
+        <!-- TANGGAL MENGUNJUNGI -->
+        <input type="date" id="tanggal" class="inputGame" required />
+
+        <button onclick="simpanData()" class="btn">Simpan Data</button>
+    </div>
+
+    <br><br>
+
+    <!-- Tabel -->
+    <div class="card" style="overflow-x:auto; padding:20px;">
+        <h3>📊 Daftar Pengunjung</h3>
+
+        <table width="100%" style="border-collapse: collapse; text-align:center; color:white;">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Umur</th>
+                    <th>Email</th>
+                    <th>Tanggal Mengunjungi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelPengunjung"></tbody>
+        </table>
+
+        <button onclick="resetData()" class="btn" style="margin-top:15px; background:red;">
+            Reset Semua Data
+        </button>
+    </div>
+</section>
+
+
+<footer>
+  <p>© <span id="year"></span> All Rights Reserved — Created by Wahyu Eka A.P</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
